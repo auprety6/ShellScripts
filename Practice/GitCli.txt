@@ -1,0 +1,19 @@
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells\practice> cd ..
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> git add .
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> git commit -m "shells"
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> git branch -M main
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> git remote add origin https://github.com/auprety6/ShellScripts.git
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.30 KiB | 334.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/auprety6/ShellScripts.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\oakto\OneDrive\Documents\ShellyShells> 
