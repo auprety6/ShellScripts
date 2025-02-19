@@ -1,0 +1,20 @@
+oakto@Anu_Uprety MINGW64 ~/OneDrive/Documents/ShellyShells
+$ cd Practice
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/Documents/ShellyShells/Practice
+$ ./prints.sh
++ echo 'Running AWS CLI command to list EC2 instances...'
+Running AWS CLI command to list EC2 instances...
++ aws sts get-caller-identity
++ echo 'Fetching EC2 instances...'
+Fetching EC2 instances...
++ aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId, InstanceType, PublicIpAddress, PrivateIpAddress, State.Name]' --output table
+------------------------------------------------------------------------
+|                           DescribeInstances                          |
++----------------------+-----------+-------+---------------+-----------+
+|  i-0a9311a614d2791b0 |  t2.micro |  None |  172.31.47.32 |  stopped  |
++----------------------+-----------+-------+---------------+-----------+
+
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/Documents/ShellyShells/Practice
+$
