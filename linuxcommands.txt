@@ -1,0 +1,66 @@
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ ll
+total 4
+-rwxr-xr-x 1 oakto 197609 1242 Mar  8 14:41 organize.sh*
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ touch moveworddocs.sh
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ chmod +x moveworddocs.sh
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ vim moveworddocs.sh
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ ./moveworddocs.sh 
+mv: cannot move '/c/Users/oakto/OneDrive/Desktop/ABOUT THE AUTHOUR.docx' to '/c/Users/oakto/OneDrive/Documents/ABOUT THE AUTHOUR.docx': Device or resource busy
+Moved: /c/Users/oakto/OneDrive/Desktop/ABOUT THE AUTHOUR.docx
+mv: cannot move '/c/Users/oakto/OneDrive/Desktop/plans .docx' to '/c/Users/oakto/OneDrive/Documents/plans .docx': Device or resource busy
+Moved: /c/Users/oakto/OneDrive/Desktop/plans .docx
+Moved: /c/Users/oakto/OneDrive/Desktop/USE OF AI IN DIABETES.docx
+All Word documents have been moved!
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi
+$ git init
+Initialized empty Git repository in C:/Users/oakto/OneDrive/Desktop/linuxboi/.git/
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git remote add origin https://github.com/auprety6/ShellScripts.git
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git add .
+warning: in the working copy of 'moveworddocs.sh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'organize.sh', LF will be replaced by CRLF the next time Git touches it
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git commit -m "playing around with my files and directories"
+[master (root-commit) b9ba439] playing around with my files and directories
+ 2 files changed, 73 insertions(+)
+ create mode 100644 moveworddocs.sh
+ create mode 100644 organize.sh
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/auprety6/ShellScripts.git'
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.17 KiB | 1.17 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/auprety6/ShellScripts/pull/new/master
+remote:
+To https://github.com/auprety6/ShellScripts.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+oakto@Anu_Uprety MINGW64 ~/OneDrive/desktop/linuxboi (master)
+$ git branch
+* master
